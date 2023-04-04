@@ -1,0 +1,8 @@
+html {
+  background-color: rgb(12, 12, 31);
+  color: white;
+}
+h1 {
+  position: absolute;
+  top: 0;
+}
