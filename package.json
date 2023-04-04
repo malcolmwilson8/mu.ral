@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "eslint": "^8.37.0"
+  }
+}
