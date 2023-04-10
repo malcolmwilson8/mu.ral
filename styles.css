@@ -2,7 +2,25 @@ html {
   background-color: rgb(12, 12, 31);
   color: white;
 }
+
 h1 {
   position: absolute;
   top: 0;
+}
+
+#toolbar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 100px;
+  width: 50px;
+}
+
+button {
+  display: flex;
+  height: 20px;
+  width: 20px;
+  margin: auto;
 }

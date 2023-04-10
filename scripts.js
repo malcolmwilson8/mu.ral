@@ -2,6 +2,9 @@
 window.addEventListener("load", () => {
   const canvas = document.querySelector("#canvas");
   const ctx = canvas.getContext("2d");
+  const widthBtn = document.querySelector("#line-width");
+  const colourBtn = document.querySelector("#line-colour");
+  let lineWidth = 10;
 
   //   Size canvas programmatically
   canvas.height = window.innerHeight;
@@ -24,19 +27,31 @@ window.addEventListener("load", () => {
     if (!drawing) {
       return;
     } else {
-      ctx.lineWidth = 10;
       ctx.lineCap = "round";
       ctx.strokeStyle = "white";
+      ctx.lineWidth = lineWidth;
 
-      ctx.lineTo(e.pageX, e.pageY);
+      let bcr = canvas.getBoundingClientRect();
+      let offsetX = bcr.left;
+      let offsetY = bcr.top;
+
+      let mouseX = parseInt(e.clientX - offsetX);
+      let mouseY = parseInt(e.clientY - offsetY);
+
+      ctx.lineTo(mouseX, mouseY);
       ctx.stroke();
       ctx.beginPath();
-      ctx.moveTo(e.pageX, e.pageY);
+      ctx.moveTo(mouseX, mouseY);
     }
+  }
+
+  function changeWidth() {
+    lineWidth = 20;
   }
 
   // Event Listeners
   canvas.addEventListener("mousedown", startPos);
   canvas.addEventListener("mouseup", stopPos);
   canvas.addEventListener("mousemove", draw);
+  widthBtn.addEventListener("click", changeWidth);
 });
