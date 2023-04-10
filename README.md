@@ -1,6 +1,6 @@
 # mu.ral
 
-This repo houses the code for my final Founders & Coders bootcamp project, mu.ral, a minimalistic, freeform drawing app.
+This repo houses the code for my final Founders & Coders bootcamp project, mu.ral, a minimalistic, freeform painting app.
 
 My influences for this project come from [tldraw](https://www.tldraw.com/), [blender](https://www.blender.org/about/) and [bomomo](https://bomomo.com/).
 
@@ -20,6 +20,7 @@ I want the app to let users:
 ## Stretch Goal
 
 - [ ] Integrate three.js with the app, adding 3D functionality
+- [ ] Add pencil & highlighter drawing modes
 
 ## Installation
 
