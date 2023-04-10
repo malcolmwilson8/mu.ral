@@ -3,10 +3,12 @@ window.addEventListener("load", () => {
   // Global variables
   const canvas = document.querySelector("#canvas");
   const ctx = canvas.getContext("2d");
-  const widthBtn = document.querySelector("#line-width");
+  const widthBtn = document.querySelector("#width-btn");
   const widthSlider = document.querySelector("#width-slider");
-  const colourBtn = document.querySelector("#line-colour");
+  const colourBtn = document.querySelector("#colour-btn");
+  const colourPicker = document.querySelector("#colour-picker");
   let lineWidth = 15;
+  let strokeStyle = "white";
   let drawing = false;
 
   //   Size canvas programmatically
@@ -31,7 +33,7 @@ window.addEventListener("load", () => {
       return;
     } else {
       ctx.lineCap = "round";
-      ctx.strokeStyle = "white";
+      ctx.strokeStyle = strokeStyle;
       ctx.lineWidth = lineWidth;
 
       let bcr = canvas.getBoundingClientRect();
@@ -52,10 +54,24 @@ window.addEventListener("load", () => {
     lineWidth = widthSlider.value;
   }
 
+  function changeColour() {
+    strokeStyle = this.value;
+    console.log(strokeStyle);
+  }
+
   // Event Listeners
   canvas.addEventListener("mousedown", startPos);
   canvas.addEventListener("mouseup", stopPos);
   canvas.addEventListener("mousemove", draw);
+  colourPicker.addEventListener("change", changeColour, false);
+  colourPicker.select();
+  colourBtn.addEventListener("click", function () {
+    if (colourPicker.style.display == "none") {
+      colourPicker.style.display = "block";
+    } else {
+      colourPicker.style.display = "none";
+    }
+  });
   widthSlider.addEventListener("change", changeWidth);
   widthBtn.addEventListener("click", function () {
     if (widthSlider.style.display == "none") {

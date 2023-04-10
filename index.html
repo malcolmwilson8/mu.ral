@@ -11,7 +11,7 @@
     <h1>mu.ral</h1>
     <canvas id="canvas"> </canvas>
     <div id="toolbar">
-      <img src="assets/brush.png" id="line-width">
+      <img src="assets/brush.png" id="width-btn">
         <input
           type="range"
           id="width-slider"
@@ -21,7 +21,9 @@
           max="30"
         />
       </img>
-      <button id="line-colour"></button>
+      <img src="/assets/palette.png" id="colour-btn">
+        <input type="color" id="colour-picker" style="display: none;" value="#ffffff">
+      </img>
     </div>
   </body>
   <script src="scripts.js"></script>
