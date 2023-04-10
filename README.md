@@ -8,7 +8,7 @@ With this app, I will make use of the HTML 5 Canvas API to render "brush" stroke
 
 - [x] Draw coloured lines on a canvas when they click and drag
 - [x] Customise line width (create a PhotoShop style sliding brush size bar) 
-- [ ] Customise line colour (with a draggable colour selector)
+- [x] Customise line colour (with a draggable colour selector)
 - [ ] Download drawings as images
 
 ## Stretch Goal
