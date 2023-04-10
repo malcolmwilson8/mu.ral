@@ -64,7 +64,6 @@ window.addEventListener("load", () => {
   canvas.addEventListener("mouseup", stopPos);
   canvas.addEventListener("mousemove", draw);
   colourPicker.addEventListener("change", changeColour, false);
-  colourPicker.select();
   colourBtn.addEventListener("click", function () {
     if (colourPicker.style.display == "none") {
       colourPicker.style.display = "block";
