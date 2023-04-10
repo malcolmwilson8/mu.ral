@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
 html {
+  font-family: DotGothic16;
   background-color: rgb(12, 12, 31);
   color: white;
 }
@@ -10,7 +13,7 @@ h1 {
 
 #toolbar {
   position: absolute;
-  right: 10px;
+  right: 150px;
   top: 10px;
   border: 1px solid white;
   border-radius: 5px;
@@ -22,5 +25,14 @@ button {
   display: flex;
   height: 20px;
   width: 20px;
+  margin: auto;
+}
+
+img {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  color: white;
+  cursor: pointer;
   margin: auto;
 }
