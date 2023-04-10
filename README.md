@@ -7,7 +7,7 @@ This repo houses the code for my final Founders & Coders project, mu.ral, a free
 With this app, I will make use of the HTML 5 Canvas API to render "brush" strokes. I want the app to let users:
 
 - [x] Draw coloured lines on a canvas when they click and drag
-- [ ] Customise drawing settings: line width, line colour, line shape
+- [ ] Customise drawing settings: line width, line colour
 - [ ] Download drawings as images
 
 ## Stretch Goal
