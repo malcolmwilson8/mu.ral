@@ -11,7 +11,16 @@
     <h1>mu.ral</h1>
     <canvas id="canvas"> </canvas>
     <div id="toolbar">
-      <button id="line-width"></button>
+      <img src="assets/brush.png" id="line-width">
+        <input
+          type="range"
+          id="width-slider"
+          style="display: none;"
+          value="15"
+          min="10"
+          max="30"
+        />
+      </img>
       <button id="line-colour"></button>
     </div>
   </body>
