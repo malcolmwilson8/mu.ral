@@ -6,7 +6,7 @@ My influences for this project come from [tldraw](https://www.tldraw.com/), [ble
 
 ## Aims
 
-With mu.ral, I intend to make use of the HTML 5 Canvas API to render "brush" strokes. This is my first project created with Canvas, and I want to explore and learn about as much of its functionality as possible for future projects.
+With mu.ral, I intend to make use of the HTML 5 Canvas API to render "brush" strokes. This is my first project created with Canvas, and I want to explore and learn about as much of its functionality as possible for future work.
 
 I aim to incorporate a 3D drawing mode into mu.ral to enhance the interactivity of the app, making full use of the canvas space available.
 
@@ -17,7 +17,7 @@ I want the app to let users:
 - [x] Customise line colour (with a draggable colour selector)
 - [ ] Download drawings as images
 
-## Stretch Goal
+## Stretch goal
 
 - [ ] Integrate three.js with the app, adding 3D functionality
 - [ ] Add pencil & highlighter drawing modes
