@@ -17,7 +17,7 @@ I want the app to let users:
 - [x] Draw coloured lines on a canvas when they click and drag
 - [x] Customise line width (create a PhotoShop style sliding brush size bar)
 - [x] Customise line colour (with a draggable colour selector)
-- [ ] Download drawings as images
+- [x] Download drawings as images
 
 ## Stretch goal
 
