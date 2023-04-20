@@ -7,6 +7,7 @@ window.addEventListener("load", () => {
   const widthSlider = document.querySelector("#width-slider");
   const colourBtn = document.querySelector("#colour-btn");
   const colourPicker = document.querySelector("#colour-picker");
+  const saveBtn = document.querySelector("#save-btn");
   let lineWidth = 15;
   let strokeStyle = "white";
   let drawing = false;
@@ -70,6 +71,14 @@ window.addEventListener("load", () => {
     } else {
       colourPicker.style.display = "none";
     }
+  });
+  saveBtn.addEventListener("click", function () {
+    const image = canvas.toDataURL("image/png");
+    const element = document.createElement("a");
+    const filename = "mymu.ral.png";
+    element.setAttribute("href", image);
+    element.setAttribute("download", filename);
+    element.click();
   });
   widthSlider.addEventListener("change", changeWidth);
   widthBtn.addEventListener("click", function () {
