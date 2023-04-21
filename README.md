@@ -4,7 +4,7 @@ This repo houses the code for my project, mu.ral, a minimalistic, freeform paint
 
 The app in its current form lets users load up a blank canvas and begin painting on it using a resizable paintbrush which they can alter the colour of. Users can also save whatever they have created on their canvas to `.png` format by clicking a button.
 
-My influences for this project come from [tldraw](https://www.tldraw.com/), [blender](https://www.blender.org/about/) and [bomomo](https://bomomo.com/).
+My influences for this project come from [tldraw](https://www.tldraw.com/) and [blender](https://www.blender.org/about/).
 
 ## Aims
 
